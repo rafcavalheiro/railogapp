@@ -1,29 +1,31 @@
 import { FC } from 'react'
-import { Link, Slider, styled } from '@mui/material'
+import { styled } from '@mui/material'
+
 
 import Header from '@/header'
+import TransferList from './providers/TransferList'
+import SelectTextFields from './providers/SelectTextFields'
 
 const App: FC = () => {
   return (
-    <Root>
+    <Root>     
       <Header />
-      <div>
-        <h2>
-          How much do you like{' '}
-          <Link href='https://vitejs.dev/' target='_blank' rel='noopener noreferrer'>
-            Vite?
-          </Link>
-        </h2>
-        <Slider />
+      <div>                  
+        <h4>Requisite um vagão vazio para o pátio de destino</h4>
+        <TransferList/>
+        <h4>Selecione a Moeda</h4>
+        <SelectTextFields/>            
       </div>
     </Root>
   )
 }
 
+
+
 const Root = styled('div')`
   padding: 1% 2% 10vh 2%;
   width: 100%;
-  min-height: 95vh;
+  min-height: 120vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,6 +34,9 @@ const Root = styled('div')`
     text-decoration: none;
     color: ${({ theme: { palette } }) => palette.primary.main};
   }
+
+   
 `
 
 export default App
+
