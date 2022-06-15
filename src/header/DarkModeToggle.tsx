@@ -38,6 +38,7 @@ const Checkbox = styled('input')`
   position: absolute;
   
   
+  
 `
 
 interface BallProps {
@@ -48,7 +49,7 @@ const Ball = styled('div', {
 })<BallProps>`
   background-color: #fff;
   border-radius: 50%;
-  position: absolute;
+  position: absolute; 
   top: 2px;
   left: 2px;
   height: 16px;

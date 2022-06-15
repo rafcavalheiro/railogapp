@@ -4,10 +4,11 @@ import { AppBar } from '@mui/material'
 
 import ButtonAppBar from '@/header/ButtonAppBar'
 
+
 const Header: FC = () => {
   return (   
     <AppBar position='fixed'>              
-      <ButtonAppBar/>     
+      <ButtonAppBar/>        
     </AppBar>
   )
 }
