@@ -6,6 +6,7 @@ import isPropValid from '@emotion/is-prop-valid'
 
 import { ChosenTheme } from '@/providers'
 
+
 const DarkModeToggle: FC = () => {
   const { theme, setTheme } = useContext(ChosenTheme)
   return (
@@ -35,6 +36,8 @@ const DarkModeToggle: FC = () => {
 const Checkbox = styled('input')`
   opacity: 0;
   position: absolute;
+  
+  
 `
 
 interface BallProps {

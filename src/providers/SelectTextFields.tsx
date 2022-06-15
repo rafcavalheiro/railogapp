@@ -9,6 +9,10 @@ const currencies = [
     label: '$',
   },
   {
+    value: 'BRL',
+    label: 'R$',
+  },
+  {
     value: 'EUR',
     label: '€',
   },
