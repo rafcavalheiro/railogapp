@@ -22,7 +22,8 @@ export default function ButtonAppBar(): JSX.Element {
             edge="start"
             color="inherit"
             aria-label="menu"
-            sx={{ mr: 2 }}                       
+            sx={{ mr: 2 }} 
+                                  
           >                                                                       
         </IconButton>
 
@@ -35,7 +36,7 @@ export default function ButtonAppBar(): JSX.Element {
           </Typography>          
 
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            RailogApp | Sistema Ferrroviário e Logistico                                           
+            RailogApp | Sistema Ferroviário e Logistico                                           
           </Typography>           
           <div>
           <DarkModeToggle/>
