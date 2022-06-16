@@ -4,7 +4,12 @@ module.exports = {
   extends: ['react-app'],
   plugins: ['prettier'],
   rules: {
-    '@typescript-eslint/no-explicit-any': 2,
-    'prettier/prettier': ['error', prettierrc]
+    "@typescript-eslint/no-unused-vars": "off",
+    'prettier/prettier': [
+      'error',
+      {
+        'endOfLine': 'auto',
+      }
+    ]
   }
 }

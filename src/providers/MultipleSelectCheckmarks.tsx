@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import * as React from 'react';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import InputLabel from '@mui/material/InputLabel';
@@ -19,14 +21,14 @@ const MenuProps = {
 };
 
 const names = [
-    '[VGCOD01] - Carro ferroviário',
-    '[VGCOD02] - Plataforma ou Prancha',
-    '[VGCOD03] - Fechado',
-    '[VGCOD04] - Hopper',
-    '[VGCOD05] - Gôndola',
-    '[VGCOD6] - Frigorífico',
-    '[VGCOD07] - Tanque',
-    '[VGCOD08] - Especial',
+  '[VGCOD01] - Carro ferroviário',
+  '[VGCOD02] - Plataforma ou Prancha',
+  '[VGCOD03] - Fechado',
+  '[VGCOD04] - Hopper',
+  '[VGCOD05] - Gôndola',
+  '[VGCOD6] - Frigorífico',
+  '[VGCOD07] - Tanque',
+  '[VGCOD08] - Especial',
 ];
 
 export default function MultipleSelectCheckmarks() {

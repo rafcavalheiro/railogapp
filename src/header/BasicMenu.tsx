@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
@@ -17,18 +19,18 @@ export default function BasicMenu() {
   };
 
   return (
-    <div>    
+    <div>
       <Button
         id="basic-button"
         aria-controls={open ? 'basic-menu' : undefined}
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
-      >            
-       <MenuIcon/> 
-      
+      >
+        <MenuIcon />
+
       </Button>
-      <Menu      
+      <Menu
         id="basic-menu"
         anchorEl={anchorEl}
         open={open}

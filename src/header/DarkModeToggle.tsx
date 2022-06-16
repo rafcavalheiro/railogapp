@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { FC, useContext } from 'react'
 import DarkModeIcon from '@mui/icons-material/Brightness3'
 import LightModeIcon from '@mui/icons-material/WbSunny'
@@ -46,7 +48,7 @@ interface BallProps {
 }
 const Ball = styled('div', {
   shouldForwardProp: isPropValid
-})<BallProps>`
+}) <BallProps>`
   background-color: #fff;
   border-radius: 50%;
   position: absolute; 

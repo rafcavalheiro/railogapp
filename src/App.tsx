@@ -1,5 +1,7 @@
+/* eslint-disable */
+
 import { FC } from 'react'
-import { Container, styled } from '@mui/material'
+import { styled } from '@mui/material'
 
 import Header from '@/header'
 import TransferList from './providers/TransferList'
@@ -11,37 +13,37 @@ import MultipleSelectCheckmarks from './providers/MultipleSelectCheckmarks'
 
 const App: FC = () => {
   return (
-    <Root>     
+    <Root>
       <Header />
-      <div> 
-      <section>
       <div>
-      <h4>Selecione um tipo de Vagão:</h4>
-          <MultipleSelectCheckmarks/>  
-      </div>
-      <br />
-      </section>                   
-      
-      <section>
-      <div>
-        <h4>Escolha um Vagão disponível para o Pátio de destino:</h4>
-          <TransferList/> 
-        </div>                 
-        
-        <div>
-          <h4>Confirmar seleções para o Pátio agora?</h4>
-          <IconLabelButtons/>  
-        </div> 
-      </section>        
+        <section>
+          <div>
+            <h4>Selecione um tipo de Vagão:</h4>
+            <MultipleSelectCheckmarks />
+          </div>
+          <br />
+        </section>
 
         <section>
-        <div>
-        <h4>Tarifas</h4>
-        <h4>Selecione a Moeda:</h4>
-          <SelectTextFields/> 
-        </div> 
-        </section>              
-                 
+          <div>
+            <h4>Escolha um Vagão disponível para o Pátio de destino:</h4>
+            <TransferList />
+          </div>
+
+          <div>
+            <h4>Confirmar seleções para o Pátio agora?</h4>
+            <IconLabelButtons />
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <h4>Tarifas</h4>
+            <h4>Selecione a Moeda:</h4>
+            <SelectTextFields />
+          </div>
+        </section>
+
       </div>
     </Root>
   )
