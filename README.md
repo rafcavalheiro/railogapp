@@ -16,7 +16,7 @@ A Demo inclui:
 ## Utilizando o protótipo
 
 - Clone este repositório,
-- Instale as dependências usando `yarn install` ou `npm install´
+- Instale as dependências usando `yarn install` ou `npm install`
 - Inicie o servidor aplicando `yarn dev` ou `npm run dev`
 
 ## Sobre MUI
