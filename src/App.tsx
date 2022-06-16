@@ -1,31 +1,46 @@
 import { FC } from 'react'
-import { styled } from '@mui/material'
-
+import { Container, styled } from '@mui/material'
 
 import Header from '@/header'
 import TransferList from './providers/TransferList'
 import SelectTextFields from './providers/SelectTextFields'
 import IconLabelButtons from './providers/IconLabelButtons'
+import MultipleSelectCheckmarks from './providers/MultipleSelectCheckmarks'
+
+
 
 const App: FC = () => {
   return (
     <Root>     
       <Header />
       <div> 
-        <div>
-          <h4>Requisite um vagão vazio para o pátio de destino:</h4>
-          <TransferList/>
+      <section>
+      <div>
+      <h4>Selecione um tipo de Vagão:</h4>
+          <MultipleSelectCheckmarks/>  
+      </div>
+      <br />
+      </section>                   
+      
+      <section>
+      <div>
+        <h4>Escolha um Vagão disponível para o Pátio de destino:</h4>
+          <TransferList/> 
         </div>                 
         
         <div>
-          <h4>Confirmar Requisições para o pátio agora?</h4>
+          <h4>Confirmar seleções para o Pátio agora?</h4>
           <IconLabelButtons/>  
-        </div>
+        </div> 
+      </section>        
 
+        <section>
         <div>
-          <h4>Selecione a Moeda:</h4>
+        <h4>Tarifas</h4>
+        <h4>Selecione a Moeda:</h4>
           <SelectTextFields/> 
-        </div>       
+        </div> 
+        </section>              
                  
       </div>
     </Root>
@@ -37,7 +52,7 @@ const App: FC = () => {
 const Root = styled('div')`
   padding: 1% 2% 10vh 2%;
   width: 100%;
-  min-height: 120vh;
+  min-height: 180vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +62,21 @@ const Root = styled('div')`
     color: ${({ theme: { palette } }) => palette.primary.main};
   }
 
-     
+  & section {
+
+    background-color: auto;
+    background-size: auto;
+    border: 2px solid gray;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    
+    
+    
+    
+  }
+
+      
 `
 
 export default App

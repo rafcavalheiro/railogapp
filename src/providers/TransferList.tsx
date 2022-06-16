@@ -118,7 +118,7 @@ export default function TransferList() {
                   }}
                 />
               </ListItemIcon>
-              <ListItemText id={labelId} primary={`Vagão ${value + 1}`} />
+              <ListItemText id={labelId} primary={`Vagão [VGCOD0${value + 1}]`} />
             </ListItem>
           );
         })}
@@ -129,7 +129,7 @@ export default function TransferList() {
 
   return (
     <Grid container spacing={2} justifyContent="center" alignItems="center">
-      <Grid item>{customList('Vagão', left)}</Grid>
+      <Grid item>{customList('Vagão Disponível', left)}</Grid>
       <Grid item>
         <Grid container direction="column" alignItems="center">
           <Button
@@ -154,7 +154,7 @@ export default function TransferList() {
           </Button>
         </Grid>
       </Grid>
-      <Grid item>{customList('Pátio', right)}</Grid>
+      <Grid item>{customList('Pátio de Destino', right)}</Grid>
     </Grid>
   );
 }

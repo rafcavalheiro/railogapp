@@ -10,26 +10,22 @@ import Stack from '@mui/material/Stack';
 
 
 
-
 export default function ButtonAppBar(): JSX.Element {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="sticky">
       
-        <Toolbar>           
-        
-        <BasicMenu/>     
-        
-        
-        
+        <Toolbar>        
+        <BasicMenu/>        
 
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           Menu                                                      
           </Typography>          
 
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            RailogApp | Sistema Ferroviário e Logistico                                           
-          </Typography>           
+           <strong> RailogApp </strong> | Sistema Ferroviário e Logistico                                           
+          </Typography> 
+
           <Stack direction="row" spacing={1}>
           <DarkModeToggle/>
           <Button color="inherit">Modo Noturno</Button>

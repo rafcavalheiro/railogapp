@@ -38,10 +38,19 @@ export default function BasicMenu() {
         }}
       >
         <MenuItem onClick={handleClose}>Perfil</MenuItem>
-        <MenuItem onClick={handleClose}>Opções</MenuItem>
+        <MenuItem onClick={handleClose}>Transporte</MenuItem>
+        <MenuItem onClick={handleClose}>Vias</MenuItem>
+        <MenuItem onClick={handleClose}>Transposição</MenuItem>
+        <MenuItem onClick={handleClose}>Orçamentação</MenuItem>
+        <MenuItem onClick={handleClose}>Sugestões de alinhamento</MenuItem>
+        <MenuItem onClick={handleClose}>Escolha de alinhamento</MenuItem>
+        <MenuItem onClick={handleClose}>Relatórios de projeto</MenuItem>
         <MenuItem onClick={handleClose}>Minha Conta</MenuItem>
         <MenuItem onClick={handleClose}>Sair</MenuItem>
       </Menu>
     </div>
   );
 }
+
+
+
